@@ -4,8 +4,14 @@ provider "aws" {
 
 resource "aws_instance" "example" {
   ami           = "ami-07650ecb0de9bd731"
-  instance_type = "t3.micro"
+  instance_type = var.instance1
   tags = {
     Name = "oak-tree3"
   }
+}
+
+
+variable "instance1" {
+  type    = string
+  default = "t2.micro"
 }
