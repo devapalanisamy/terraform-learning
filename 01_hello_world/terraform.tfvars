@@ -1,1 +1,1 @@
-instance1 = "t3.large"
+instance1 = "t3.micro"
