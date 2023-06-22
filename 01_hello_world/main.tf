@@ -11,7 +11,4 @@ resource "aws_instance" "example" {
 }
 
 
-variable "instance1" {
-  type    = string
-  default = "t2.micro"
-}
+
